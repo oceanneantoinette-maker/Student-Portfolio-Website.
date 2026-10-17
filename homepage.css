@@ -1,0 +1,501 @@
+body {
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+
+.shape {
+    position: fixed;
+    z-index: -1;
+    pointer-events: none;
+}
+
+.shape-1 {
+    width: 350px;
+    height: 350px;
+
+    background-color: #d8c9e8;
+
+    border-radius: 50%;
+
+    top: 100px;
+    left: -120px;
+}
+
+.shape-2 {
+    width: 300px;
+    height: 400px;
+
+    background-color: #c9dce8;
+
+    border-radius: 60% 40% 50% 30%;
+
+    bottom: -100px;
+    right: -80px;
+
+    transform: rotate(25deg);
+}
+
+.shape-3 {
+    width: 150px;
+    height: 150px;
+
+    background-color: #e8d8c9;
+
+    border-radius: 50%;
+
+    top: 45%;
+    right: 8%;
+}
+
+.hero {
+   width: 100%; 
+    height: 50vh;
+    background-image: url("download\ \(19\).jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+
+.content {
+    height: 50vh;
+    background-color: #F5EFE9;
+}
+
+.hero {
+    position: relative;
+    width: 100%;
+    height: 50vh;
+    background-image: url("download\ \(19\).jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.hero {
+    height: 75vh;
+    background-image: url("download\ \(19\).jpg");
+    background-size: cover;
+    background-position: center;
+clip-path: ellipse(100% 100% at 45% 1%);
+    
+}
+
+.hero-text {
+    position: absolute;
+    top: 10%;
+    left: 20%;
+    color: white;
+  font-family: "Original Surfer", sans-serif;
+  font-weight: 30;
+  font-style: normal;
+  font-size: 18px;
+}
+
+nav {
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+    background-color: #F5EFE9;
+}
+
+nav {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .logo {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+}
+
+nav a.active {
+    color: #8b6f61;
+}
+
+nav a:hover {
+    color: #00bcd4;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+}
+
+header h1{
+margin: 0;
+}
+
+h1 {
+    font-family: "Original Surfer", sans-serif;
+  font-weight: 30;
+  font-style: normal;
+  font-size: 48px;
+}
+
+nav ul{
+list-style-type: none;
+margin: 0;
+padding: 15px;
+display: flex;
+}
+
+nav li{
+    margin-left: 30px;;
+}
+
+nav a{
+    text-decoration: none;
+    color:black;
+}
+
+.learn-more {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    background-color: #d9c4af;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.learn-more:hover {
+    background-color: black;
+    color: #F5EFE9;
+}
+
+.bottom-icon1 {
+    position: fixed;
+    bottom: 20px;
+    left: 20%;
+}
+
+.bottom-icon1 img {
+    width: 40px;
+    height: 40px;
+}
+
+.bottom-icon2 {
+    position: fixed;
+    bottom: 20px;
+    left: 40%;
+}
+
+.bottom-icon2 img {
+    width: 40px;
+    height: 40px;
+}
+
+.bottom-icon3 {
+    position: fixed;
+    bottom: 20px;
+    left: 60%;
+}
+
+.bottom-icon3 img {
+    width: 40px;
+    height: 40px;
+}
+
+.bottom-icon4 {
+    position: fixed;
+    bottom: 20px;
+    left: 80%;
+}
+
+.bottom-icon4 img {
+    width: 40px;
+    height: 40px;
+}
+
+ /* ==========================================
+   MOBILE PHONE RESPONSIVE DESIGN
+   ========================================== */
+
+@media screen and (max-width: 600px) {
+
+    /* Prevent horizontal scrolling */
+    html,
+    body {
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+
+
+    /* ==========================================
+       BACKGROUND SHAPES
+       ========================================== */
+
+    .shape-1 {
+        width: 220px;
+        height: 220px;
+        top: 200px;
+        left: -120px;
+    }
+
+    .shape-2 {
+        width: 200px;
+        height: 280px;
+        bottom: -100px;
+        right: -100px;
+    }
+
+    .shape-3 {
+        width: 100px;
+        height: 100px;
+        top: 55%;
+        right: -30px;
+    }
+
+
+    /* ==========================================
+       HERO IMAGE
+       ========================================== */
+
+    .hero {
+        position: relative;
+
+        width: 100%;
+        height: 65vh;
+
+        background-size: cover;
+        background-position: center;
+
+        /* Keep your curved shape */
+        clip-path: ellipse(130% 70% at 50% 0%);
+    }
+
+
+    /* ==========================================
+       NAVIGATION
+       ========================================== */
+
+    header {
+        width: 100%;
+        padding: 10px;
+        box-sizing: border-box;
+
+        display: block;
+    }
+
+    nav {
+        position: relative;
+
+        top: auto;
+        right: auto;
+
+        width: 100%;
+
+        box-sizing: border-box;
+
+        padding: 8px 5px;
+
+        background-color: #F5EFE9;
+
+        border: 2px solid black;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    /* Student Name */
+
+    nav .logo {
+        font-size: 16px;
+        text-align: center;
+
+        margin-bottom: 5px;
+    }
+
+
+    /* Navigation links */
+
+    nav ul {
+        width: 100%;
+
+        margin: 0;
+        padding: 5px 0;
+
+        display: grid;
+
+        grid-template-columns: repeat(5, 1fr);
+
+        list-style: none;
+    }
+
+
+    nav li {
+        margin: 0;
+
+        text-align: center;
+    }
+
+
+    nav a {
+        display: block;
+
+        margin: 0;
+
+        padding: 5px 1px;
+
+        font-size: 11px;
+
+        white-space: nowrap;
+    }
+
+
+    /* ==========================================
+       HERO TEXT
+       ========================================== */
+
+    .hero-text {
+
+        position: absolute;
+
+        top: 22%;
+        left: 0;
+
+        width: 100%;
+
+        box-sizing: border-box;
+
+        padding: 20px;
+
+        color: white;
+
+        text-align: center;
+    }
+
+
+    .hero-text p {
+        margin: 7px 0;
+
+        font-size: 14px;
+
+        line-height: 1.4;
+    }
+
+
+    .hero-text h1 {
+        margin: 10px 0;
+
+        font-size: 36px;
+
+        line-height: 1.1;
+    }
+
+
+    /* ==========================================
+       LEARN MORE BUTTON
+       ========================================== */
+
+    .learn-more {
+        display: inline-block;
+
+        margin-top: 15px;
+
+        padding: 10px 20px;
+
+        font-size: 14px;
+    }
+
+
+    /* ==========================================
+       BOTTOM ICONS
+       ========================================== */
+
+    .bottom-icon1,
+    .bottom-icon2,
+    .bottom-icon3,
+    .bottom-icon4 {
+
+        position: absolute;
+
+        bottom: 20px;
+
+        width: 25%;
+
+        text-align: center;
+
+        box-sizing: border-box;
+    }
+
+
+    /* Four equal columns */
+
+    .bottom-icon1 {
+        left: 0;
+    }
+
+    .bottom-icon2 {
+        left: 25%;
+    }
+
+    .bottom-icon3 {
+        left: 50%;
+    }
+
+    .bottom-icon4 {
+        left: 75%;
+    }
+
+
+    /* Icon size */
+
+    .bottom-icon1 img,
+    .bottom-icon2 img,
+    .bottom-icon3 img,
+    .bottom-icon4 img {
+
+        width: 28px;
+        height: 28px;
+    }
+
+
+    /* Icon text */
+
+    .bottom-icon1 p,
+    .bottom-icon2 p,
+    .bottom-icon3 p,
+    .bottom-icon4 p {
+
+        margin: 3px 0 0;
+
+        font-size: 11px;
+
+        color: white;
+    }
+
+}

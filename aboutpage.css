@@ -1,0 +1,549 @@
+body {
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+/* ABSTRACT BACKGROUND SHAPES */
+
+.shape {
+    position: fixed;
+    z-index: -1;
+    pointer-events: none;
+}
+
+/* Large circle */
+.shape-1 {
+    width: 350px;
+    height: 350px;
+
+    background-color: #d8c9e8;
+
+    border-radius: 50%;
+
+    top: 100px;
+    left: -120px;
+}
+
+/* Curved blob */
+.shape-2 {
+    width: 300px;
+    height: 400px;
+
+    background-color: #c9dce8;
+
+    border-radius: 60% 40% 50% 30%;
+
+    bottom: -100px;
+    right: -80px;
+
+    transform: rotate(25deg);
+}
+
+/* Small circle */
+.shape-3 {
+    width: 150px;
+    height: 150px;
+
+    background-color: #e8d8c9;
+
+    border-radius: 50%;
+
+    top: 45%;
+    right: 8%;
+}
+
+.hero {
+    position: absolute;
+    top: 2%;
+    left: 20%;
+    color: rgb(0, 0, 0);
+  font-family: "Bad Script", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 48px;
+}
+
+.hero-subtext {
+    position: absolute;
+    bottom: 75%;
+    left: 20%;
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+  font-family: "Fredoka", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+    letter-spacing: 10px;
+
+}
+
+.hero-text{
+    position: absolute;
+    bottom: 50%;
+    left: 20%;
+    color: rgb(0, 0, 0);
+    font-family: "Original Surfer", sans-serif;
+  font-weight: 30;
+  font-style: normal;
+  font-size: 18px;
+}
+
+nav {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
+    background-color: #F5EFE9;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .logo {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    gap: 35px;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+}
+
+nav a.active {
+    color: #8b6f61;
+}
+
+nav a:hover {
+    color: #00bcd4;
+}
+
+.upload-box {
+    position: absolute;
+    right: 80px;
+    top: 100px;
+    width: 300px;
+    height: 300px;
+}
+
+.upload-box label {
+    width: 100%;
+    height: 100%;
+    border: 2px dashed #888;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-color: #f5f5f5;
+}
+
+.upload-box label:hover {
+    background-color: #eaeaea;
+}
+
+.upload-box span {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.upload-box p {
+    font-size: 16px;
+}
+
+#pictureUpload {
+    display: none;
+}
+
+.hobbies-box {
+    position: absolute;
+    bottom: 30px;
+    left: 20px;
+
+    width: 200px;
+    padding: 20px;
+
+    background-color: #f5f5f5;
+    border: 2px solid #888;
+    border-radius: 15px;
+
+    box-sizing: border-box;
+}
+
+.hobbies-box h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.hobby {
+    padding: 10px 0;
+    border-bottom: 1px solid #aaa;
+}
+
+.hobby:last-child {
+    border-bottom: none;
+}
+
+.hobby h3 {
+    margin: 0 0 5px 0;
+    font-size: 16px;
+}
+
+.hobby p {
+    margin: 0;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+/* SKILLS BOX */
+
+.skills-box {
+    width: 450px;
+    padding: 25px;
+
+    margin: 300px auto 30px;
+
+    background-color: #f5f5f5;
+    border: 2px solid #888;
+    border-radius: 15px;
+
+    box-sizing: border-box;
+}
+
+.skills-box h2 {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+
+
+/* INDIVIDUAL SKILL */
+
+.skill {
+    margin-bottom: 18px;
+}
+
+.skill-name {
+    display: flex;
+    justify-content: space-between;
+
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+
+/* PROGRESS BAR */
+
+.progress-container {
+    width: 100%;
+    height: 10px;
+
+    background-color: #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.progress-bar {
+    height: 100%;
+    background-color: #555;
+    border-radius: 10px;
+}
+
+footer {
+            background-color: rgba(34, 34, 34, 0.9);
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 50px;
+        }
+
+        
+/* ============================= */
+/* MOBILE RESPONSIVE DESIGN      */
+/* ============================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    margin: 0;
+    width: 100%;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+/* NAVIGATION BAR */
+
+nav {
+    position: relative;
+    width: 95%;
+    max-width: 1200px;
+    margin: 10px auto;
+    padding: 15px;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+nav a {
+    font-size: 15px;
+}
+
+/* ABSTRACT BACKGROUND SHAPES */
+
+.shape-1 {
+    max-width: 100vw;
+}
+
+.shape-2 {
+    max-width: 100vw;
+}
+
+.shape-3 {
+    max-width: 100vw;
+}
+
+/* TABLETS AND MOBILE PHONES */
+
+@media screen and (max-width: 768px) {
+
+    /* Navigation */
+
+    nav {
+        width: 94%;
+        flex-direction: column;
+        justify-content: center;
+        padding: 15px 10px;
+        gap: 12px;
+    }
+
+    nav .logo {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    nav ul {
+        width: 100%;
+        padding: 0;
+        gap: 10px 16px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    nav ul li {
+        margin: 0;
+    }
+
+    nav a {
+        font-size: 13px;
+    }
+
+    /* About Me heading */
+
+    .hero {
+        position: relative;
+        top: auto;
+        left: auto;
+        margin: 30px 15px 0;
+        text-align: center;
+        font-size: 38px;
+    }
+
+    .hero p {
+        margin: 0;
+    }
+
+    /* WHO I AM subtitle */
+
+    .hero-subtext {
+        position: relative;
+        top: auto;
+        bottom: auto;
+        left: auto;
+        margin: 15px 15px;
+        text-align: center;
+        font-size: 16px;
+        letter-spacing: 5px;
+    }
+
+    .hero-subtext p {
+        margin: 0;
+    }
+
+    /* Introduction paragraph */
+
+    .hero-text {
+        position: relative;
+        top: auto;
+        bottom: auto;
+        left: auto;
+        width: auto;
+        margin: 15px 22px 30px;
+        font-size: 16px;
+        line-height: 1.7;
+        overflow-wrap: anywhere;
+        text-align: center;
+    }
+
+    .hero-text p {
+        margin: 0 0 8px;
+    }
+
+    /* Interests and hobbies */
+
+    .hobbies-box {
+        position: relative;
+        top: auto;
+        bottom: auto;
+        left: auto;
+        right: auto;
+        width: calc(100% - 36px);
+        max-width: 400px;
+        margin: 25px auto;
+        padding: 20px;
+    }
+
+    .hobbies-box h2 {
+        font-size: 22px;
+        margin-bottom: 15px;
+    }
+
+    /* Picture upload box */
+
+    .upload-box {
+        position: relative;
+        top: auto;
+        bottom: auto;
+        left: auto;
+        right: auto;
+        width: calc(100% - 40px);
+        max-width: 300px;
+        height: 260px;
+        margin: 25px auto;
+    }
+
+    .upload-box label {
+        width: 100%;
+        height: 100%;
+    }
+
+    /* Skills box */
+
+    .skills-box {
+        position: relative;
+        width: calc(100% - 36px);
+        max-width: 450px;
+        margin: 25px auto 30px;
+        padding: 20px;
+    }
+
+    .skills-box h2 {
+        font-size: 23px;
+        margin-bottom: 20px;
+    }
+
+    .skill-name {
+        gap: 10px;
+        font-size: 13px;
+    }
+
+    .skill-name span:first-child {
+        overflow-wrap: anywhere;
+    }
+
+    .skill-name span:last-child {
+        flex-shrink: 0;
+    }
+
+    /* Background shapes */
+
+    .shape-1 {
+        width: 220px;
+        height: 220px;
+        left: -100px;
+        top: 180px;
+    }
+
+    .shape-2 {
+        width: 220px;
+        height: 300px;
+        right: -120px;
+        bottom: -40px;
+    }
+
+    .shape-3 {
+        width: 100px;
+        height: 100px;
+        right: -20px;
+        top: 45%;
+    }
+
+    /* Footer */
+
+    footer {
+        width: 100%;
+        padding: 15px 10px;
+        margin-top: 30px;
+        font-size: 13px;
+        overflow-wrap: anywhere;
+    }
+}
+
+/* EXTRA SMALL PHONES */
+
+@media screen and (max-width: 380px) {
+
+    .hero {
+        font-size: 32px;
+    }
+
+    nav ul {
+        gap: 12px;
+    }
+
+    nav a {
+        font-size: 12px;
+    }
+
+    .hero-text {
+        margin-left: 16px;
+        margin-right: 16px;
+        font-size: 14px;
+    }
+
+    .hobbies-box,
+    .skills-box {
+        padding: 16px;
+    }
+
+    .hobbies-box h2 {
+        font-size: 19px;
+    }
+}

@@ -1,0 +1,541 @@
+/* General page styling */
+        body {
+            margin: 0;
+            background-color: #f4f4f4;
+            color: #333;
+             font-family:"Original Surfer", sans-serif;
+
+            /* Background image */
+            background-image:  url("sunset.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+        }
+
+.original-surfer-regular {
+  font-family: "Original Surfer", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+        .shape {
+    position: fixed;
+    z-index: -1;
+    pointer-events: none;
+}
+
+.shape-1 {
+    width: 350px;
+    height: 350px;
+
+    background-color: #d8c9e8;
+
+    border-radius: 50%;
+
+    top: 100px;
+    left: -120px;
+}
+
+.shape-2 {
+    width: 300px;
+    height: 400px;
+
+    background-color: #c9dce8;
+
+    border-radius: 60% 40% 50% 30%;
+
+    bottom: -100px;
+    right: -80px;
+
+    transform: rotate(25deg);
+}
+
+.shape-3 {
+    width: 150px;
+    height: 150px;
+
+    background-color: #e8d8c9;
+
+    border-radius: 50%;
+
+    top: 45%;
+    right: 8%;
+}
+
+        /* Header */
+        header {
+            background-color: rgba(34, 34, 34, 0.85);
+            color: white;
+            padding: 25px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 32px;
+        }
+
+        header p {
+            margin-top: 8px;
+            color: #ccc;
+        }
+
+        /* Navigation */
+        nav {
+            background-color: #F5EFE9;
+            text-align: center;
+            padding: 12px;
+        }
+
+        nav a.active {
+    color: #b0ada9;
+}
+
+        nav a {
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 16px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        nav a:hover {
+            color: #00bcd4;
+        }
+
+        /* Main content */
+        .container {
+            width: 90%;
+            max-width: 1000px;
+            margin: 40px auto;
+
+            background-color: rgba(255, 255, 255, 0.90);
+            padding: 25px;
+            border-radius: 15px;
+
+        }
+
+        .container h2 {
+            text-align: center;
+            margin-bottom: 10px;
+            font-size: 28px;
+        }
+
+        .intro {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #666;
+        }
+
+        /* Education table */
+        .table-container {
+            overflow-x: auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: white;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        th {
+            background-color: #222;
+            color: white;
+            padding: 15px;
+            text-align: left;
+        }
+
+        td {
+            padding: 15px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+
+        /* Footer */
+        footer {
+            background-color: rgba(34, 34, 34, 0.9);
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 50px;
+        }
+
+        /* Responsive design */
+        @media screen and (max-width: 600px) {
+
+            header h1 {
+                font-size: 25px;
+            }
+
+            nav a {
+                display: block;
+                margin: 10px 0;
+            }
+
+            .container {
+                width: 85%;
+                padding: 15px;
+            }
+
+            table {
+                font-size: 14px;
+            }
+
+            th, td {
+                padding: 10px;
+            }
+        }
+
+        /* ==============================
+   GENERAL PAGE
+============================== */
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    font-family: "Original Surfer", sans-serif;
+
+    background-image: url("sunset.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.original-surfer-regular {
+    font-family: "Original Surfer", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+/* ==============================
+   BACKGROUND SHAPES
+============================== */
+
+.shape {
+    position: fixed;
+    z-index: -1;
+    pointer-events: none;
+}
+
+.shape-1 {
+    width: 350px;
+    height: 350px;
+    background-color: #d8c9e8;
+    border-radius: 50%;
+    top: 100px;
+    left: -120px;
+}
+
+.shape-2 {
+    width: 300px;
+    height: 400px;
+    background-color: #c9dce8;
+    border-radius: 60% 40% 50% 30%;
+    bottom: -100px;
+    right: -80px;
+    transform: rotate(25deg);
+}
+
+.shape-3 {
+    width: 150px;
+    height: 150px;
+    background-color: #e8d8c9;
+    border-radius: 50%;
+    top: 45%;
+    right: 8%;
+}
+
+
+/* ==============================
+   HEADER
+============================== */
+
+header {
+    background-color: rgba(34, 34, 34, 0.85);
+    color: white;
+    padding: 25px 15px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 32px;
+}
+
+header p {
+    margin-top: 8px;
+    color: #ccc;
+}
+
+
+/* ==============================
+   NAVIGATION
+============================== */
+
+nav {
+    background-color: #F5EFE9;
+    text-align: center;
+    padding: 12px 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+    margin: 0;
+    padding: 5px 8px;
+    font-size: 16px;
+    font-family: "Times New Roman", Times, serif;
+}
+
+nav a.active {
+    color: #b0ada9;
+}
+
+nav a:hover {
+    color: #00bcd4;
+}
+
+
+/* ==============================
+   MAIN CONTENT
+============================== */
+
+.container {
+    width: calc(100% - 40px);
+    max-width: 1000px;
+    margin: 40px auto;
+
+    background-color: rgba(255, 255, 255, 0.90);
+
+    padding: 25px;
+
+    border-radius: 15px;
+}
+
+.container h2 {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 28px;
+}
+
+.intro {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #666;
+    line-height: 1.5;
+}
+
+
+/* ==============================
+   EDUCATION TABLE
+============================== */
+
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+table {
+    width: 100%;
+    min-width: 650px;
+
+    border-collapse: collapse;
+    background-color: white;
+
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+th {
+    background-color: #222;
+    color: white;
+    padding: 15px;
+    text-align: left;
+    white-space: nowrap;
+}
+
+td {
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+
+/* ==============================
+   FOOTER
+============================== */
+
+footer {
+    background-color: rgba(34, 34, 34, 0.9);
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 50px;
+}
+
+footer p {
+    margin: 0;
+}
+
+
+/* ==============================
+   MOBILE PHONE
+============================== */
+
+@media screen and (max-width: 600px) {
+
+    /* Header */
+    header {
+        padding: 20px 10px;
+    }
+
+    header h1 {
+        font-size: 25px;
+    }
+
+    header p {
+        font-size: 14px;
+    }
+
+
+    /* Navigation */
+    nav {
+        padding: 10px 5px;
+        gap: 4px;
+    }
+
+    nav a {
+        font-size: 14px;
+        padding: 6px 5px;
+    }
+
+
+    /* Main container */
+    .container {
+        width: calc(100% - 20px);
+        margin: 25px auto;
+        padding: 15px;
+        border-radius: 12px;
+    }
+
+
+    /* Heading */
+    .container h2 {
+        font-size: 23px;
+    }
+
+
+    /* Introduction */
+    .intro {
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+
+
+    /* Table */
+    .table-container {
+        overflow-x: auto;
+        width: 100%;
+    }
+
+    table {
+        min-width: 600px;
+        font-size: 13px;
+    }
+
+    th,
+    td {
+        padding: 10px;
+    }
+
+
+    /* Footer */
+    footer {
+        font-size: 13px;
+        padding: 12px 10px;
+    }
+
+
+    /* Smaller background shapes */
+    .shape-1 {
+        width: 200px;
+        height: 200px;
+        left: -100px;
+        top: 150px;
+    }
+
+    .shape-2 {
+        width: 180px;
+        height: 250px;
+        right: -100px;
+        bottom: -80px;
+    }
+
+    .shape-3 {
+        width: 100px;
+        height: 100px;
+        right: -30px;
+    }
+}
+
+
+/* ==============================
+   VERY SMALL PHONES
+============================== */
+
+@media screen and (max-width: 400px) {
+
+    nav {
+        gap: 2px;
+    }
+
+    nav a {
+        font-size: 13px;
+        padding: 5px 4px;
+    }
+
+    .container {
+        width: calc(100% - 14px);
+        padding: 12px;
+    }
+
+    .container h2 {
+        font-size: 21px;
+    }
+
+    .intro {
+        font-size: 13px;
+    }
+
+    table {
+        min-width: 570px;
+    }
+}
